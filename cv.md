@@ -6,4 +6,4 @@ discord: Roman-Fedorenko-07#0592
 5. console.log('Hello world!')
 6. no experience.
 7.incomplete secondary education.
-8. А2
+8. А2.

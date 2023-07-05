@@ -1,3 +1,37 @@
 body {
-    background-color: white;
+    background-color: black;
+}
+h1 {
+    color: orangered;
+}
+h2 {
+    color: orangered;
+}
+h3 {
+    color: orangered;
+}
+p {
+    color: orangered;
+}
+footer {
+    background-color: orangered;
+}
+h5 {
+    color: black;
+}
+ol {
+    color: black;
+}
+.date {
+    color: black;
+}
+.link {
+    color: darkgray;
+}
+.profphoto {
+    height: 60%;
+    width: 20%;
+    position: absolute;
+    left: 20%;
+    top: none;
 }

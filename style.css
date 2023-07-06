@@ -1,5 +1,7 @@
 body {
     background-color: black;
+    margin: auto;
+    overflow: auto;
 }
 h1 {
     color: orangered;
@@ -15,7 +17,9 @@ p {
 }
 footer {
     background-color: orangered;
-    width: 30%;
+    width: 28.6%;
+    position: absolute;
+    top: 435px;
 }
 h5 {
     color: black;
@@ -30,9 +34,14 @@ ol {
     color: darkgray;
 }
 .profphoto {
-    width: 30%;
-    position: absolute;
+    width: 28.6%;
+    margin: 0px;
     left: 0%;
+}
+main {
+    position: absolute;
+    left: 30%;
+    top: 0px;
 }
 .logo {
     width: 30%;

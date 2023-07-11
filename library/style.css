@@ -1,15 +1,18 @@
 body { 
     width: 1440px;
+    margin: auto;
+    overflow-y: scroll;
 }
 
 header {
     background-color: #0C0C0E;
     height: 90px;
+    display: flex;
 }
 
 .header-txt {
     color: #FFFFFF;
-    position: absolute;
+    position: relative;
     top: 20px;
     left: 20px;
     font-size: 20px;
@@ -20,43 +23,13 @@ header {
     position: absolute;
     top: 20px;
     left: 768px;
+}
+
+li {
+    list-style-type: none;
     display: inline;
-}
-
-.n1 {
-    position: absolute;
-    top: ;
-    left: ;
-}
-
-.n2 {
-    position: absolute;
-    top: ;
-    left: ;
-}
-
-.n3 {
-    position: absolute;
-    top: ;
-    left: ;
-}
-
-.n4 {
-    position: absolute;
-    top: ;
-    left: ;
-}
-
-.n5 {
-    position: absolute;
-    top: ;
-    left: ;
-}
-
-.n6 {
-    position: absolute;
-    top: ;
-    left: ;
+    margin: 15px;
+    font-size: 20px;
 }
 
 .fonradius {
@@ -65,8 +38,8 @@ header {
     background-color: #FFFFFF;;
     border-radius: 50%;
     position: absolute;
-    top: ;
-    left: ;
+    top: 0px;
+    left: px;
 }
 
 .radius {
@@ -74,7 +47,7 @@ header {
     width: 9.33px;
     background-color: #0C0C0E;
     border-radius: 50%;
-    position: absolute;
+    border: 2px solid aquamarine;
     top: ;
     left: ;
 }
@@ -84,7 +57,26 @@ header {
     height: 7.78px; 
     border-radius: 50% 50% 0 0 / 100% 100% 0 0;
     background: #0C0C0E;
-    position: absolute;
+    border: 2px solid aquamarine;
     top: ;
     left: ;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #0C0C0E;
+    height: 250px;
+    width: 1440px;
+    position: absolute;
+    top: 4996px;
+    display: flex;
 }

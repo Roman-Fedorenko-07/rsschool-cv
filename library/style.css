@@ -1,0 +1,90 @@
+body { 
+    width: 1440px;
+}
+
+header {
+    background-color: #0C0C0E;
+    height: 90px;
+}
+
+.header-txt {
+    color: #FFFFFF;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+}
+
+.div-header {
+    color: #FFFFFF;
+    position: absolute;
+    top: 20px;
+    left: 768px;
+    display: inline;
+}
+
+.n1 {
+    position: absolute;
+    top: ;
+    left: ;
+}
+
+.n2 {
+    position: absolute;
+    top: ;
+    left: ;
+}
+
+.n3 {
+    position: absolute;
+    top: ;
+    left: ;
+}
+
+.n4 {
+    position: absolute;
+    top: ;
+    left: ;
+}
+
+.n5 {
+    position: absolute;
+    top: ;
+    left: ;
+}
+
+.n6 {
+    position: absolute;
+    top: ;
+    left: ;
+}
+
+.fonradius {
+    height: 28px;
+    width: 28px;
+    background-color: #FFFFFF;;
+    border-radius: 50%;
+    position: absolute;
+    top: ;
+    left: ;
+}
+
+.radius {
+    height: 9.33px;
+    width: 9.33px;
+    background-color: #0C0C0E;
+    border-radius: 50%;
+    position: absolute;
+    top: ;
+    left: ;
+}
+
+.polradius {
+    width: 15.56px;
+    height: 7.78px; 
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background: #0C0C0E;
+    position: absolute;
+    top: ;
+    left: ;
+}

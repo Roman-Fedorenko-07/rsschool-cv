@@ -8,14 +8,16 @@ header {
     background-color: #0C0C0E;
     height: 90px;
     display: flex;
+    justify-content: space-between;
 }
 
 .header-txt {
     color: #FFFFFF;
     position: relative;
-    top: 20px;
+    top: 0px;
     left: 20px;
-    font-size: 20px;
+    font-size: 30px;
+    font-family: Forum;
 }
 
 .div-header {
@@ -23,6 +25,9 @@ header {
     position: absolute;
     top: 20px;
     left: 768px;
+    font-size: 20px;
+    font-family: Inter;
+    font-style: normal;
 }
 
 li {
@@ -30,39 +35,98 @@ li {
     display: inline;
     margin: 15px;
     font-size: 20px;
+    cursor: pointer;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-.fonradius {
-    height: 28px;
+.proficon {
     width: 28px;
-    background-color: #FFFFFF;;
-    border-radius: 50%;
+    height: 28px;
     position: absolute;
-    top: 0px;
-    left: px;
+    top: 31px;
+    left: 1392px;
+    cursor: pointer;
 }
 
-.radius {
-    height: 9.33px;
-    width: 9.33px;
+main {
+    margin: auto;
+}
+
+.fonWelcome {
+    width: 1440px;
+    height: 600px;
+}
+
+.welcome {
+    display: flex;
     background-color: #0C0C0E;
-    border-radius: 50%;
-    border: 2px solid aquamarine;
-    top: ;
-    left: ;
+    width: 600px;
+    height: 220px;
+    padding: 35px 40px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -474px;
+    left: 0px;
 }
 
-.polradius {
-    width: 15.56px;
-    height: 7.78px; 
-    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-    background: #0C0C0E;
-    border: 2px solid aquamarine;
-    top: ;
-    left: ;
+.pWelcome {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 3px;
 }
 
+.sAbout {
+    margin: auto;
+}
 
+.about {
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 665px;
+    left: 667px;
+    margin: auto;
+    
+}
+
+.hrAbout {
+    height: 1px;
+    width: 50px;
+    background-color: black;
+
+}
+
+.textNextAbout {
+    display: flex;
+width: 1440px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px;
+position: absolute;
+top: 786px;
+}
 
 
 
@@ -79,4 +143,10 @@ footer {
     position: absolute;
     top: 4996px;
     display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+}
+
+.endStr1 {
+    align-items: end;
 }

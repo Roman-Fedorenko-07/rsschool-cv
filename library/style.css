@@ -14,8 +14,10 @@ header {
 .header-txt {
     color: #FFFFFF;
     position: relative;
+    top: 20px;
     top: 0px;
     left: 20px;
+    font-size: 20px;
     font-size: 30px;
     font-family: Forum;
 }
@@ -101,14 +103,16 @@ main {
     top: 665px;
     left: 667px;
     margin: auto;
-    
 }
 
+.pAbout {
+    display: flex;
+    justify-content: center;
+}
 .hrAbout {
     height: 1px;
     width: 50px;
     background-color: black;
-
 }
 
 .textNextAbout {
@@ -128,6 +132,180 @@ position: absolute;
 top: 786px;
 }
 
+.imgAbout {
+    width: 450px;
+    height: 560px;
+}
+
+.aboutPicture {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -130px;
+}
+
+#flangImg1 {
+    margin-left: 20px;
+}
+#flangImg2 {
+    margin-right: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1451px;
+    left: 723px;
+}
+
+.carouselImg {
+    cursor: pointer;
+}
+
+.favTxt {
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+
+.hrFavorites {
+    height: 1px;
+    width: 50px;
+    background-color: black;
+    position: relative;
+    top: -25px;
+    
+}
+
+.sFavorites{
+    margin: auto;
+}
+
+.divFavorites {
+    position: relative;
+    top: -58px;
+    
+}
+
+.pFav {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.txtNextFavorites {
+    position: relative;
+    top: -55px;
+}
+
+.button2 {
+    margin-left: 57px;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.carousel2 {
+    margin-left: 90px;
+    cursor: pointer;
+}
+
+.carousel-2 {
+    cursor: pointer;
+}
+
+.staffPicks {
+    width: px;
+    color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: relative;
+    top: -36px;
+}
+
+.hr-ST {
+    width: 60px;
+    height: 1px;
+    background: #BB945F;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 1774px;
+}
+
+.author {
+    width: 168px;
+    height: 80px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    position: relative;
+    top: -36px;
+} 
+
+.description {
+    width: 355px;
+    height: 320px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.buy {
+    color: #0C0C0E;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+width: 75px;
+height: 30px;
+flex-shrink: 0;
+border-radius: 2px;
+border: 1px solid #0C0C0E;
+background-color: #FFF;
+cursor: pointer;
+}
+
+.catalog {
+    padding: 15px 175px 15px 20px;
+    border: 1px solid #000;
+    background: #FFF;
+    
+}
 
 
 

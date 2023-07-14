@@ -106,9 +106,16 @@ main {
 }
 
 .pAbout {
-    display: flex;
-    justify-content: center;
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
 }
+
 .hrAbout {
     height: 1px;
     width: 50px;
@@ -230,7 +237,7 @@ top: 786px;
 }
 
 .staffPicks {
-    width: px;
+    width: 102px;
     color: #000;
     font-family: Forum;
     font-size: 20px;
@@ -240,7 +247,8 @@ top: 786px;
     letter-spacing: 2px;
     text-transform: capitalize;
     position: relative;
-    top: -36px;
+    top: -31px;
+    display: inline;
 }
 
 .hr-ST {
@@ -248,8 +256,9 @@ top: 786px;
     height: 1px;
     background: #BB945F;
     margin-bottom: 20px;
-    position: absolute;
-    top: 1774px;
+    position: relative;
+    top: -36px;
+    left: -218px;
 }
 
 .author {
@@ -284,27 +293,233 @@ top: 786px;
 
 .buy {
     color: #0C0C0E;
-text-align: center;
-font-family: Inter;
-font-size: 10px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1px;
-width: 75px;
-height: 30px;
-flex-shrink: 0;
-border-radius: 2px;
-border: 1px solid #0C0C0E;
-background-color: #FFF;
-cursor: pointer;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    background-color: #FFF;
+    cursor: pointer;
+    position: relative;
+    top: -268px;
 }
 
 .catalog {
-    padding: 15px 175px 15px 20px;
+    width: 500px;
+    height: 550px;
+    padding: 33px 0px 15px 20px;
     border: 1px solid #000;
-    background: #FFF;
-    
+    background: #FFF;   
+}
+
+.description-2 {
+    width: 355px;
+    height: 280px;
+    margin-bottom: 55px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.description-4 {
+    width: 355px;
+    height: 240px;
+    margin-bottom: 104px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.author-3 {
+    width: 355px;
+    height: 80px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.buy-4 {
+    width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #BB945F;
+    color: #BB945F;
+    background-color: #FFF;
+    cursor: pointer;
+    position: relative;
+    top: -268px;
+}
+
+.boocks2-1str {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin-bottom: 40px;
+}
+
+.img-book1 {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    top: -241px;
+    left: 290px;
+}
+
+.img-book2 {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    top: -241px;
+    left: 290px;
+}
+
+.boocks2-2str {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin-bottom: 40px;
+}
+
+.img-book3 {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    top: -241px;
+    left: 290px;
+}
+
+.img-book4 {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    top: -245px;
+    left: 290px;
+}
+
+#bookC2 {
+    position: relative;
+    right: 80px;
+}
+
+#bookC4 {
+    position: relative;
+    right: 80px;
+}
+
+.h2CS {
+    margin: 20px;
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+
+.hrCS {
+    width: 50px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #0C0C0E; 
+}
+
+.pCS {
+    width: 1400px;
+    height: 120px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    letter-spacing: 2px;
+    margin: 40px 20px;
+}
+
+.coffe-Tea {
+    color: #BB945F;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.dish {
+    width: 196px;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.hrDish {
+    width: 100px;
+    height: 1px;
+    background: #BB945F;
+    margin: 0px 60px;
+    position: relative;
+    top: 40px;
+}
+
+.prise {
+    color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.menuBlock {
+    margin-top: 40px;
+    display: flex;
+}
+
+.drink {
+    width: 438px;
+    height: 520px;
+}
+
+.menu-Eat {
+    display: flex;
+    justify-content: space-between;
 }
 
 

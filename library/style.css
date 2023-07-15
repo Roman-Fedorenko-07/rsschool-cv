@@ -70,9 +70,9 @@ main {
     padding: 35px 40px;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: -474px;
-    left: 0px;
+    position: absolute;
+    top: 220px;
+    left: 0x;
 }
 
 .pWelcome {
@@ -87,7 +87,8 @@ main {
 }
 
 .sAbout {
-    margin: auto;
+    margin: aut;
+    
 }
 
 .about {
@@ -96,13 +97,11 @@ main {
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px;
     letter-spacing: 2px;
     text-transform: capitalize;
-    position: absolute;
-    top: 665px;
-    left: 667px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .pAbout {
@@ -111,32 +110,39 @@ main {
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 100% */
     letter-spacing: 2px;
     text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 0px;
 }
 
 .hrAbout {
     height: 1px;
     width: 50px;
     background-color: black;
+    margin-top: 10px;
+    margin-bottom: 0%
 }
 
 .textNextAbout {
     display: flex;
-width: 1440px;
-flex-direction: column;
-justify-content: center;
-flex-shrink: 0;
-color: #000;
-text-align: center;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 40px;
-position: absolute;
-top: 786px;
+    width: 1440px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0px;
+}
+
+.divNextAbout {
+    margin-bottom: 20px;
 }
 
 .imgAbout {
@@ -147,8 +153,6 @@ top: 786px;
 .aboutPicture {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    top: -130px;
 }
 
 #flangImg1 {
@@ -161,9 +165,8 @@ top: 786px;
 .button {
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: 1451px;
-    left: 723px;
+    margin-top: 40px;
+    margin-bottom: 5px;
 }
 
 .carouselImg {
@@ -180,26 +183,18 @@ top: 786px;
     letter-spacing: 2px;
     text-transform: capitalize;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .hrFavorites {
     height: 1px;
     width: 50px;
     background-color: black;
-    position: relative;
-    top: -25px;
-    
+    margin-bottom: 20px;
 }
 
 .sFavorites{
     margin: auto;
-}
-
-.divFavorites {
-    position: relative;
-    top: -58px;
-    
 }
 
 .pFav {
@@ -210,11 +205,6 @@ top: 786px;
     font-weight: 700;
     line-height: normal;
     
-}
-
-.txtNextFavorites {
-    position: relative;
-    top: -55px;
 }
 
 .button2 {
@@ -230,10 +220,12 @@ top: 786px;
 .carousel2 {
     margin-left: 90px;
     cursor: pointer;
+    margin-bottom: 40px;
 }
 
 .carousel-2 {
     cursor: pointer;
+    margin-bottom: 40px;
 }
 
 .staffPicks {
@@ -520,7 +512,174 @@ top: 786px;
 .menu-Eat {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
+
+.Contxt {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.hrCon {
+    width: 50px;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: #0C0C0E;
+}
+
+.headCon {
+    margin: 0px 0px 40px 0px;
+}
+
+.pCIT {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin: 0px 0px 20px;
+}
+
+.pCIT-Last {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.CIT {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin: 10px 0px;
+}
+
+.CIT-Last {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin: 20px 0px;
+}
+
+#seniorStaff {
+    margin: 20px 0px;
+}
+
+.CIT-Inline {
+    display: flex;
+}
+
+.class-InfoTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.map {
+    width: 696px;
+    height: 414px;
+}
+
+.class-Info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts {
+    margin: 20px 0px 40px;
+}
+
+.h2Card {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.hrCard {
+    width: 50px;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: #0C0C0E;
+    margin-bottom: 40px;
+}
+
+.findCardTxt {
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
+.findCard-CardTxt {
+    color: #000;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    margin: 20px 246px 20px 20px;
+}
+
+.formCard {
+    width: 520px;
+    height: 66px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 20px 100px 20px 20px;
+}
+
+::placeholder {
+    color: #8E8E8E;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; 
+    letter-spacing: 0.6px;
+}
+
+
 
 
 
@@ -534,7 +693,7 @@ footer {
     height: 250px;
     width: 1440px;
     position: absolute;
-    top: 4996px;
+    top: 7996px;
     display: flex;
     flex-direction: row;
     color: #FFFFFF;

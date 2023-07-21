@@ -723,38 +723,38 @@ main {
 
 .p1GARC {
     color: #000;
-text-align: center;
-font-family: Forum;
-font-size: 30px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.6px;
+    text-align: center;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
 }
 
 .p2GARC {
     color: #000;
-text-align: right;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 40px;
-letter-spacing: 0.4px;
+    text-align: right;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.4px;
 }
 
 .butGARC {
     display: flex;
-width: 75px;
-height: 30px;
-padding: 10px 0px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
-border-radius: 2px;
-border: 1px solid #0C0C0E;
-background-color: #FFF;
-cursor: pointer;
+    width: 75px;
+    height: 30px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    background-color: #FFF;
+    cursor: pointer;
 }
 
 #but2GARC {
@@ -775,6 +775,7 @@ cursor: pointer;
     display: flex;
     justify-content: space-between;
 }
+
 .library-Card {
     margin-bottom: 41px;
 }
@@ -783,11 +784,31 @@ footer {
     background-color: #0C0C0E;
     height: 250px;
     width: 1440px;
-    display: flex;
-    flex-direction: row;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
-.endStr1 {
-    align-items: end;
+.footer1Str {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 10px 20px;
+}
+
+.sMedia {
+    display: flex;
+}
+
+.mediaIcon {
+    margin-right: 15px;
+}
+
+.footer2Str {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.fHr {
+    width: 1400px;
+    height: 1px;
+    background: #FFF;
 }

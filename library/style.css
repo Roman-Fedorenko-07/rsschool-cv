@@ -382,7 +382,7 @@ main {
     width: 200px;
     height: 300px;
     position: relative;
-    top: -241px;
+    top: -239px;
     left: 290px;
 }
 
@@ -390,7 +390,7 @@ main {
     width: 200px;
     height: 300px;
     position: relative;
-    top: -241px;
+    top: -239px;
     left: 290px;
 }
 
@@ -405,7 +405,7 @@ main {
     width: 200px;
     height: 300px;
     position: relative;
-    top: -241px;
+    top: -240px;
     left: 290px;
 }
 
@@ -413,7 +413,7 @@ main {
     width: 200px;
     height: 300px;
     position: relative;
-    top: -245px;
+    top: -244px;
     left: 290px;
 }
 
@@ -782,7 +782,7 @@ main {
 
 footer {
     background-color: #0C0C0E;
-    height: 250px;
+    
     width: 1440px;
     color: #FFF;
 }
@@ -804,11 +804,50 @@ footer {
 .footer2Str {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin: 0px 21px 30px;
 }
 
 .fHr {
     width: 1400px;
     height: 1px;
     background: #FFF;
+}
+
+.pLastFooter1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.pLastFooter2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.pLastFooter3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.lastFooter {
+    display: flex;
+    justify-content: space-between;
+    margin: 44px 20px;
 }

@@ -24,12 +24,12 @@ header {
 
 .div-header {
     color: #FFFFFF;
-    position: absolute;
-    top: 20px;
-    left: 768px;
     font-size: 20px;
     font-family: Inter;
     font-style: normal;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
 
 li {
@@ -48,10 +48,13 @@ a {
 .proficon {
     width: 28px;
     height: 28px;
-    position: absolute;
-    top: 31px;
-    left: 1392px;
     cursor: pointer;
+    margin-left: 24px;
+}
+.header-flex {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
 }
 
 main {
@@ -171,8 +174,30 @@ main {
     margin-bottom: 5px;
 }
 
-.carouselImg {
+.carouselImg::before {
+    content: '';
     cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    border-radius: 50%;
+    position: relative;
+    top: -2px;
+    left: -2px;
+}
+
+.carouselImg:checked::before {
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #BB945F;
+    border-radius: 50%;
+    position: relative;
+    top: -2px;
+    left: -2px;
 }
 
 .favTxt {
@@ -210,6 +235,37 @@ main {
 }
 
 .button2 {
+    color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.carousel2 {
+    margin-left: 90px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    accent-color: black;
+    width: 17px;
+    height: 17px;
+}
+
+.carousel-2 {
+    accent-color: black;
+    cursor: pointer;
+    margin-bottom: 40px;
+    width: 17px;
+    height: 17px;
+}
+
+.forCursor::before {
+    content: '';
+    cursor: pointer;
+}
+
+.forCursor:checked::before {
     margin-left: 57px;
     color: #000;
     font-family: Inter;
@@ -217,18 +273,6 @@ main {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-
-.carousel2 {
-    margin-left: 90px;
-    cursor: pointer;
-    margin-bottom: 40px;
-}
-
-.carousel-2 {
-    cursor: pointer;
-    margin-bottom: 40px;
-    accent-color: pink;
 }
 
 .staffPicks {
@@ -664,6 +708,7 @@ main {
     line-height: 50px;
     letter-spacing: 0.6px;
     margin: 20px 246px 20px 20px;
+    
 }
 
 .formCard {
@@ -714,11 +759,16 @@ main {
 }
 
 .findCard-Card {
-    width: 600px;
-    height: 386px;
+    width: 560px;
+    height: 272px;
     flex-shrink: 0;
-    border: 3px solid #BB945F;
     background-color: #BB945F;
+    margin-bottom: 20px;
+}
+
+.underFindCard {
+    padding: 20px 20px 30px 20px;
+    border: 3px solid #BB945F;
 }
 
 .p1GARC {

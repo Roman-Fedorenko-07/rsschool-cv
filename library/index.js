@@ -1,1 +1,1 @@
-console.log('98/100\n-2 points becouse in section "About" absent transparent element size 26x26')
+console.log('98/100\n-2 points becouse in section "About" absent transparent element size 26x26');

@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
+    scroll-behavior: smooth; 
 }
 
 body {
@@ -981,4 +981,44 @@ footer {
 .lastSect {
     position: relative;
     top: -30px
+}
+
+@media (max-width: 2000px) {
+    .hrNav {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .navig {
+        display: none;
+    }
+
+    .hrNav-design {
+        width: 45px;
+        height: 2px;
+        background-color: #FFFFFF;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .hrNav {
+        display: flex;
+        flex-direction: column;
+        width: 45px;
+        height: 20px; 
+        display: non;
+    }
+
+    .div-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: ;
+    }
 }

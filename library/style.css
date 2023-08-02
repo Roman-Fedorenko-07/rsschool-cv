@@ -990,9 +990,7 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    body {
-        
-    }
+    
 }
 
 @media (max-width: 768px) {
@@ -1019,6 +1017,5 @@ footer {
     .div-header {
         display: flex;
         justify-content: space-between;
-        align-items: ;
     }
 }

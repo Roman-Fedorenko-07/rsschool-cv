@@ -1031,15 +1031,15 @@ footer {
     }
 
     #flangImg1 {
-        display: none;
+        margin: auto;
     }
 
     #flangImg2 {
         display: none;
     }
 
-    .imgAbout {
-        margin: auto;
+    #CentrImg {
+        display: none;
     }
 
     #carouselImgId {
@@ -1048,50 +1048,54 @@ footer {
 
     .pFav {
         margin-left: 20px;
+        display: flex;
+        
     }
 
     .button2 {
         display: flex;
-        justify-content: space-between;
+        
         margin-left: 20px;
+        
     }
 
     .boocks2-1str {
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        right: 384px;
+        width: 100%;
+        margin-left: -30px;
+        
     }
 
     #bookC2 {
-        position: relative;
-        right: 0px;
         margin-top: 40px;
+        margin-left: 160px;
     }
 
     .boocks2-2str {
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        right: 384px;
+        width: 100%;
+        margin-left: -30px;
     }
 
     #bookC4 {
-        position: relative;
-        right: 0px;
         margin-top: 40px;
+        margin-left: 160px;
     }
 
     .pCS {
         width: 728px;
         height: 200px;
+        margin: auto;
     }
 
     .menu-Eat {
         display: flex;
         flex-direction: column;
+        
     }
 
     .drink {
@@ -1148,38 +1152,42 @@ footer {
         height: 80px;
     }
 
-    footer {
-        width: 768px;
-        margin: auto;
-    }
-
-    main {
-        width: 768px;
-        margin: auto;
-    }
-
-    header {
-        width: 768px;
-        margin: auto;
-    }
-
-    .fonWelcome {
-        width: 768px;
-        height: 600px;
-        
-    }
-
     .allWelcome {
         display: flex;
-        justify-content: center;
+        justify-content: start;
     }
 
     .textNextAbout {
         width: 728px;
         height: 80px;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        left: 25px
+        margin: auto;
+    }
+    
+    footer {
+        width: 100%;
+        margin: auto;
+    }
+
+    main {
+        width: 100%;
+        margin: auto;
+    }
+
+    header {
+        width: 100%;
+        
+    }
+
+    .fonWelcome {
+        width: 100%;
+        heigh: 600px;
+        
+    }
+    body {
+        width: 768px;
+    }
+
+    .fHr {
+        width: 100%;
     }
 }

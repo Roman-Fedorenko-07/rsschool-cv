@@ -845,6 +845,8 @@ input[type=text] {
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0.4px;
+    width: 456px;
+    height: 120px;
 }
 
 .butGARC {
@@ -987,6 +989,10 @@ footer {
     .hrNav {
         display: none;
     }
+
+    #carouselImgId {
+        display: none;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1003,19 +1009,177 @@ footer {
         height: 2px;
         background-color: #FFFFFF;
         margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 4px;
     }
     
     .hrNav {
         display: flex;
         flex-direction: column;
         width: 45px;
-        height: 20px; 
-        display: non;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: 40px; 
     }
 
     .div-header {
         display: flex;
+        justify-content: space-betwee;
+    }
+
+    .about {
+        margin-bottom: 30px;
+    }
+
+    #flangImg1 {
+        display: none;
+    }
+
+    #flangImg2 {
+        display: none;
+    }
+
+    .imgAbout {
+        margin: auto;
+    }
+
+    #carouselImgId {
+        display:inline;
+    }
+
+    .pFav {
+        margin-left: 20px;
+    }
+
+    .button2 {
+        display: flex;
         justify-content: space-between;
+        margin-left: 20px;
+    }
+
+    .boocks2-1str {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        right: 384px;
+    }
+
+    #bookC2 {
+        position: relative;
+        right: 0px;
+        margin-top: 40px;
+    }
+
+    .boocks2-2str {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        right: 384px;
+    }
+
+    #bookC4 {
+        position: relative;
+        right: 0px;
+        margin-top: 40px;
+    }
+
+    .pCS {
+        width: 728px;
+        height: 200px;
+    }
+
+    .menu-Eat {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .drink {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .food {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        top: 280px;
+        margin-bottom: 260px;
+        margin-right: 20px;
+    }
+
+    .class-Info {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .class-InfoTxt {
+        margin-bottom: 70px;
+    }
+
+    .contacts {
+        margin-bottom: 60px;
+        margin-left: 20px;
+    }
+
+    .class-InfoImg {
+        margin-left: 15px;
+    }
+
+    .LC {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .GARC {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p2GARC {
+        text-align: center;
+        width: 600px;
+        height: 80px;
+    }
+
+    footer {
+        width: 768px;
+        margin: auto;
+    }
+
+    main {
+        width: 768px;
+        margin: auto;
+    }
+
+    header {
+        width: 768px;
+        margin: auto;
+    }
+
+    .fonWelcome {
+        width: 768px;
+        height: 600px;
+        
+    }
+
+    .allWelcome {
+        display: flex;
+        justify-content: center;
+    }
+
+    .textNextAbout {
+        width: 728px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 25px
     }
 }

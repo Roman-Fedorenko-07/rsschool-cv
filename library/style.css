@@ -208,6 +208,12 @@ main {
     left: -2px;
 }
 
+.carret {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
 .favTxt {
     color: #0C0C0E;
     font-family: Forum;
@@ -996,12 +1002,8 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    
-}
-
-@media (max-width: 768px) {
     .navig {
-        display: none;
+        isplay: none;  
     }
 
     .hrNav-design {
@@ -1023,7 +1025,43 @@ footer {
 
     .div-header {
         display: flex;
-        justify-content: space-betwee;
+    }
+}
+
+@media (max-width: 768px) {
+    .navig {
+        position: absolute;
+        left: 300%;
+        top: 0px;
+        width: 332px;
+        height: 570px;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hrNav-design {
+        width: 45px;
+        height: 2px;
+        background-color: #FFFFFF;
+        margin-top: 5px;
+        margin-bottom: 4px;
+    }
+    
+    .hrNav {
+        display: flex;
+        flex-direction: column;
+        width: 45px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: 40px; 
+        cursor: pointer;
+    }
+
+    .div-header {
+        display: flex;
     }
 
     .about {
@@ -1054,9 +1092,22 @@ footer {
 
     .button2 {
         display: flex;
-        
-        margin-left: 20px;
-        
+        margin-left: 20px;   
+    }
+
+    .carret-l {
+        display: flex;
+        margin: 0px 58px 0px 77px;
+    }
+
+    .carret-r {
+        display: flex;
+        margin: 0px 77px 0px 58px;
+    }
+
+    .aboutPicture {
+        display: flex;
+        align-items: center;
     }
 
     .boocks2-1str {
@@ -1180,13 +1231,23 @@ footer {
 
     .fonWelcome {
         width: 100%;
-        
     }
+
     body {
         width: 768px;
     }
 
     .fHr {
         width: 100%;
+    }
+}
+
+body {
+    @media (max-width: 768px) {
+        .active {
+            display: block;
+            overflow-x: hidden;
+            left: 0%;
+        }
     }
 }

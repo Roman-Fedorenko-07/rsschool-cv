@@ -208,7 +208,13 @@ main {
     left: -2px;
 }
 
-.carret {
+.carret-l {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+.carret-r {
     width: 24px;
     height: 24px;
     display: none;
@@ -1006,7 +1012,7 @@ footer {
         position: absolute;
 	top: 89px;
 	left: 0;
-       transform: translateX(-400%);
+       transform: translateX(-100%);
         transition: transform 0.5s;
         width: 332px;
         height: 480px;
@@ -1026,7 +1032,7 @@ footer {
     }
 
     .menu.active {
-        transform: translateX(297.5%);
+        transform: translateX(333.5%);
         display: flex;
     }
 
@@ -1034,13 +1040,26 @@ footer {
         margin-bottom: 30px;
     }
 
-    .hrNav-design {
+    .hrNav span {
+        display: flex;
         width: 45px;
         height: 2px;
         background-color: #FFFFFF;
         margin-top: 5px;
         margin-bottom: 4px;
     }
+
+    .hrNav.active .label:nth-of-type(2) {
+        display: none;
+      }
+      .hrNav.active .label:nth-of-type(1) {
+        top: 50%;
+        transform: translate(0%, 90%) rotate(45deg);  
+      }
+      .hrNav.active .label:nth-of-type(3) {
+        top: 50%;
+        transform: translate(0%, 0%) rotate(-45deg); 
+      }
 
     .hrNav {
         display: flex;
@@ -1066,11 +1085,11 @@ footer {
         position: absolute;
 	top: 89px;
 	left: 0;
-	transform: translateX(232%);
+	transform: translateX(-100%);
 	transition: transform 0.5s;
         width: 332px;
         height: 480px;
-        background-color: aquamarine;
+        background-color: #0C0C0E;
         z-index: 2;
         overflow: hidden;
     }
@@ -1296,4 +1315,16 @@ footer {
     .fHr {
         width: 100%;
     }
+
+    .hrNav.active .label:nth-of-type(2) {
+        display: none;
+      }
+      .hrNav.active .label:nth-of-type(1) {
+        top: 50%;
+        transform: translate(0%, 90%) rotate(45deg);  
+      }
+      .hrNav.active .label:nth-of-type(3) {
+        top: 50%;
+        transform: translate(0%, 0%) rotate(-45deg); 
+      }
 }

@@ -13,14 +13,14 @@ if (menu && menuBtn) {
 	})
 	
 	menu.addEventListener('click', e => {
-	if(e.target.classList.contains('body')) {
+	if(e.target.classList.contains('.menu')) {
 		menu.classList.remove('active')
 		menuBtn.classList.remove('active')
 		body.classList.remove('lock')
 	}
 	})
 
-	document.querySelector('main').addEventListener('click', e => {
+	menu.addEventListener('click', e => {
 		if(e.target.classList.contains('body')) {
 			menu.classList.remove('active')
 			menuBtn.classList.remove('active')

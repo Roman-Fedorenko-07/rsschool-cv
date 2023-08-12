@@ -16,17 +16,23 @@
                 <h1 class="bPL">Brooklyn Public Library</h1>
             </div>
             <div class="div-header">
-                <nav>
+                <nav class="menu">
                     <ul class="navig">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#favorites">Favorites</a></li>
-                        <li><a href="#coffeShop">Coffe shop</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                        <li><a href="#library-Card">Library Card</a></li>
+                        <li class="menuItem"><a href="#about">About</a></li>
+                        <li class="menuItem"><a href="#favorites">Favorites</a></li>
+                        <li class="menuItem"><a href="#coffeShop">Coffe shop</a></li>
+                        <li class="menuItem"><a href="#contacts">Contacts</a></li>
+                        <li class="menuItem"><a href="#library-Card">Library Card</a></li>
                     </ul>
                 </nav>
             <div class="proficon"><img src="../things-for-library/icon_profile.svg" alt="profile icon"></div>
+            <div class="hrNav">
+                        <label class="label"><span class="hrNav-design"></span></label>
+                        <label class="label"><span class="hrNav-design"></span></label>
+                        <label class="label"><span class="hrNav-design"></span></label>
+                        </div>
             </div>
+            
         </section>
     </header>
     <main>
@@ -50,15 +56,17 @@
                     coffee shop inside</p>
             </div>
             <div class="aboutPicture">
+                <div><img src="../things-for-library/Carret_Left.svg" class="carret-l"></div>
                 <img class="imgAbout" id="flangImg1"
                     src="../things-for-library/img1about.jpg"
                     alt="fist picture from library">
-                <img class="imgAbout"
+                <img class="imgAbout" id="CentrImg"
                     src="../things-for-library/img2about.jpg"
                     alt="second picture from library">
                 <img class="imgAbout" id="flangImg2"
                     src="../things-for-library/img3about.jpg"
                     alt="third picture from library">
+                    <div><img src="../things-for-library/Carret_Right.svg" class="carret-r"></div>
             </div>
             <div class="button">
                 <form>
@@ -70,6 +78,12 @@
                     </label>
                     <label>
                         <input class="carouselImg" type="radio" name="button">
+                    </label>
+                    <label>
+                        <input class="carouselImg" id="carouselImgId" type="radio" name="button">
+                    </label>
+                    <label>
+                        <input class="carouselImg" id="carouselImgId" type="radio" name="button">
                     </label>
                 </form>
             </div>
@@ -162,9 +176,9 @@
                 <h2 class="h2CS">Coffee Shop</h2>
                 <hr class="hrCS">
                 <p class="pCS">In our library, we have of cozy coffee shop, welcoming in customers with frothy
-                    cappuccinos and friendly conversation.<br>
+                    cappuccinos and friendly conversation.
                     You can get a favorite book and read in coffee shop. our barista to cook you best coffee, and also
-                    you can try desserts<br>
+                    you can try desserts
                     from bakery.</p>
             </div>
             <div class="menu-Eat">
@@ -264,7 +278,7 @@
                 </div>
                 <div class="class-InfoImg">
                     <img class="map" alt="map's"
-                        src="https://s3-alpha-sig.figma.com/img/bdb5/e0fa/c186f506678db9fa76e262f1ef4e3ff2?Expires=1690156800&Signature=Jw2j~8m7UFlmTRE6YAlBy6xXSmaEy6B9d3fulDCPz1a0kQ44ACbwew7ZnuAOtzkI~n2dK6c1dmmKzr3f82FTnyOLyME5piBO4IrbfbpCYDXMbaeWq~l3EgA8k0wTamAUTaR0ptcKIObM~pQrs41fC97ARttH7RrbtulOEBMXbys5eScep25iqM0Gpd-y-Qe7-YpQgFFQd8MCY75smJjPDgUdrDb1niaSJAIawFsg1KXqPClGGExaBdxaOchmVgSA0X68wc1wMW4K1e1GzN0HLUvkkaDSMcM2Nooeel~8pGL8gshTRM030MgL6eiJSgWGYyFn8VybTTik-s6emuCdmQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                    src="../things-for-library/maps.png">
                 </div>
             </div>
         </section>
@@ -295,7 +309,7 @@
             </div>
             <div class="GARC">
                 <p class="p1GARC">Get a reader card</p>
-                <p class="p2GARC">You will be able to see a reader card after<br>logging into account or you can register a new<br>account</p>
+                <p class="p2GARC">You will be able to see a reader card after<br>logging into account or you can register a new account</p>
                 <div class="but-GARC">
                     <button class="butGARC">Sign Up</button>
                     <button class="butGARC" id="but2GARC">Log in</button>
@@ -336,6 +350,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script> 
 </body>
-<script src="index.js"></script>
 </html>

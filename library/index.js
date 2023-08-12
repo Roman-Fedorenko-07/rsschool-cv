@@ -35,4 +35,5 @@ menu.querySelectorAll('.menuItem').forEach(link => {
 		body.classList.remove('lock')
 	})
 })
+	
 }

@@ -6,6 +6,7 @@ body {
     width: 1440px;
     margin: auto;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 header {
@@ -174,6 +175,42 @@ main {
 #flangImg2 {
     margin-right: 20px;
 }
+
+.div-imgAbout2 {
+    margin-left: 25px;
+    transform: translateX(120%);
+	transition: transform 1.5s;
+    
+    position: absolute;
+    left: 2100px;
+}
+
+
+
+#flangImg3-2 {
+    margin-left: 25px;
+    transform: translateX(220%);
+	transition: transform 1.5s;
+    
+    position: absolute;
+    left: 2100px;
+}
+
+
+.div-imgAbout2.slide1 {
+    transform: translateX(-252%);
+}
+
+.imgAbout.slide1-img {
+    transform: translateX(-102%);
+    transition: transform 1.5s;
+}
+
+.imgAbout.slide1-img1 {
+    transform: translateX(-130%);
+    transition: transform 1.5s;
+}
+
 
 .button {
     display: flex;
@@ -1002,7 +1039,11 @@ footer {
         display: none;
     }
 
-    #carouselImgId {
+    #carouselImgId1 {
+        display: none;
+    }
+
+    #carouselImgId2 {
         display: none;
     }
 }

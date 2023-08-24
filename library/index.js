@@ -98,13 +98,21 @@ dots1.addEventListener("click", function(event) {
 	}
 })
 
-const prof = document.getElementsByClassName('proficon')
-const reg = document.getElementsByClassName('reg')
+const prof = document.getElementById('PI');
+const reg = document.getElementById('reg');
 
 prof.addEventListener("click", function(event) {
 	if (!prof) return console.log('lox');
 	else {
 	reg.classList.toggle('profOpen');
+	}
+}
+)
+
+document.addEventListener("click", function(event) {
+	const clickProfIcon = event.composedPath().includes(prof);
+	if (!clickProfIcon) {
+		return reg.classList.remove('profOpen');
 	}
 }
 )

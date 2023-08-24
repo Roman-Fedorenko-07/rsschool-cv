@@ -25,7 +25,7 @@
                         <li class="menuItem"><a href="#library-Card">Library Card</a></li>
                     </ul>
                 </nav>
-            <div class="proficon"><img src="../things-for-library/icon_profile.svg" alt="profile icon"></div>
+            <div class="proficon" id="PI"><img class="profic" id="pi" src="../things-for-library/icon_profile.svg" alt="profile icon"></div>
             <div class="hrNav">
                         <label class="label"><span class="hrNav-design"></span></label>
                         <label class="label"><span class="hrNav-design"></span></label>
@@ -45,7 +45,7 @@
                     TO THE BROOKLYN<br>
                     LIBRARY</h3>
             </div>
-            <div class="reg">
+            <div class="reg" id="reg">
                 <p class="pzhr">Profile</p>
                 <hr class="hrlog">
                 <p class="plog">Log in</p>
@@ -58,20 +58,27 @@
                 <p class="plog2">Log Out</p>
             </div>
             <div class="login">
+                <div class="loginStr">
                 <p class="zag">LOGIN</p>
-                <img src="../things-for-library/close_btn.svg" alt="close button">
+                <img class="closebtn" src="../things-for-library/close_btn.svg" alt="close button">
+                </div>
                 <p class="info-zag">E-mail or readers card</p>
                 <form class="eap">
                     <label class="email-label">
-                        <input type="text" placeholder="">
+                        <input class="email-label1" type="text" placeholder="">
                     </label>
                 </form>
-                    <p class="info-zag">Password</p>
+                    <p class="info-zag infoz1">Password</p>
                     <form class="eap">
                         <label class="email-label">
-                            <input type="text" placeholder="">
+                            <input class="email-label1" type="text" placeholder="">
                         </label>
                 </form>
+                <button class="logbut">Log In</button>
+                <div class="predlStr">
+                <p class="predl">Don’t have an account?</p>
+                <p class="predl1">Register</p>
+                </div>
             </div>
         </section>
         <section class="sAbout" id="about">
@@ -335,12 +342,12 @@
                     <p class="findCard-CardTxt">Brooklyn Public Library</p>
                     <form class="formCard">
                         <label class="label-Card">
-                            <input type="text" placeholder="Reader's name">
+                            <input class="inp-card" type="text" placeholder="Reader's name">
                         </label>
                     </form>
                     <form class="formCard">
                         <label class="label-Card">
-                            <input type="text" placeholder="Card number">
+                            <input class="inp-card" type="text" placeholder="Card number">
                         </label>
                     </form>
                 </div>

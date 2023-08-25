@@ -117,7 +117,76 @@ document.addEventListener("click", function(event) {
 }
 )
 
+ const plog = document.getElementById('plog');
+ const login = document.getElementById('login');
 
+ plog.addEventListener("click", function(event) {
+	if (!plog) return console.log('lox');
+	else {
+	login.classList.toggle('logOpen');
+	}
+}
+)
+
+const closebtn = document.getElementById('closebtn1');
+
+closebtn.addEventListener("click", function(event) {
+	if (!closebtn) return console.log('lox');
+	else {
+	login.classList.remove('logOpen');
+	}
+}
+)
+
+document.addEventListener("click", function(event) {
+	const clickclosebtn = event.composedPath().includes(login);
+	if (!clickclosebtn) {
+		return login.classList.remove('profOpen');
+	}
+}
+)
+
+const preg = document.getElementById('plog2');
+ const registr = document.getElementById('registr');
+
+ preg.addEventListener("click", function(event) {
+	if (!preg) return console.log('lox');
+	else {
+	registr.classList.toggle('regOpen');
+	}
+}
+)
+
+const closebtn2 = document.getElementById('closebtn2');
+
+closebtn2.addEventListener("click", function(event) {
+	if (!closebtn2) return console.log('lox');
+	else {
+	registr.classList.remove('regOpen');
+	}
+}
+)
+
+const predl1 = document.getElementById('predl1');
+const predl2 = document.getElementById('predl2')
+
+predl1.addEventListener("click", function(event) {
+	if (!predl1) return console.log('lox');
+	else {
+		login.classList.remove('logOpen');
+		registr.classList.add('regOpen');
+	}
+}
+)
+
+predl2.addEventListener("click", function(event) {
+	if (!predl2) return console.log('lox');
+	else {
+		login.classList.add('logOpen');
+		registr.classList.remove('regOpen');
+	}
+}
+)
 
 // var slideIndex = 1;
 // showSlides(slideIndex);

@@ -1147,6 +1147,11 @@ left: 1230px;
 transform: translateX(150%);
 }
 
+.login.logOpen {
+    transform: translateX(0%);
+    transition: transform 1.5s;
+}
+
 .zag {
     color: #000;
 text-align: center;
@@ -1250,6 +1255,34 @@ cursor: pointer;
 .closebtn {
     cursor: pointer;
     margin-right: 15px;
+}
+
+.registr {
+    background-color: #FFF;
+    width: 250px;
+height: 420px;
+position: absolute;
+top: 0px;
+left: -374px;
+transform: translateX(300%);
+}
+
+.registr.regOpen {
+    transform: translateX(0%);
+    transition: transform 1.5s;
+}
+
+.reg-Str {
+    display: flex;
+}
+
+
+.zag1 {
+    margin: 20px 54px 0px 85px;
+}
+
+.info-zag1 {
+    margin-left: 25px;
 }
 
 @media (max-width: 2000px) {

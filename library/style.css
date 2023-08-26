@@ -1285,6 +1285,86 @@ transform: translateX(300%);
     margin-left: 25px;
 }
 
+.catalog {
+    display: none;                    !!!!!!!!!!!!!!!!!!!!!!
+}
+
+.s-n {
+    display: none;
+}
+
+.catalog1 {
+    width: 500px;
+    height: 550px;
+    padding: 33px 0px 15px 20px;
+    border: 1px solid #000;
+    background: #FFF;
+}
+
+.boocks2-2-1str {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#bookC2-2 {
+    position: relative;
+    left: 320px
+}
+
+.boocks2-2-2str {
+    display: flex;
+    
+}
+
+#bookC4-2 {
+    position: relative;
+    left: 320px
+}
+
+.author-2 {
+    color: #000;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; 
+letter-spacing: 2px;
+text-transform: uppercase;
+transform: translateY(-30px);
+}
+
+.img-book1-2 {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    top: -234px;
+    left: 290px;
+}
+
+.img-book2-2 {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    top: -234px;
+    left: 290px;
+}
+
+.img-book3-2 {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    top: -235px;
+    left: 290px;
+}
+
+.img-book4-2 {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    top: -244px;
+    left: 290px;
+}
+
 @media (max-width: 2000px) {
     .hrNav {
         display: none;
@@ -1297,9 +1377,58 @@ transform: translateX(300%);
     #carouselImgId2 {
         display: none;
     }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .div-imgAbout2.slide1 {
+        transform: translateX(-258%);
+    }
+
+    .div-imgAbout2.slide2-img {
+        transform: translateX(-360.5%);
+    }
+
+    .div-imgAbout3.slide2 {
+        transform: translateX(-256.5%);
+    }
+    
 }
 
 @media (max-width: 1024px) {
+    .div-imgAbout2.slide1 {
+        transform: translateX(-258%);
+    }
+
+    .div-imgAbout2.slide2-img {
+        transform: translateX(-361.5%);
+    }
+
+    .div-imgAbout3.slide2 {
+        transform: translateX(-258.5%);
+    }
+
+    .reg.profOpen {
+        transform: translateX(-60%);
+        transition: transform 1.5s;
+    }
+
+    .login.logOpen {
+        transform: translateX(-16%);
+        transition: transform 1.5s;
+    }
+
+    .registr.regOpen {
+        transform: translateX(-16%);
+        transition: transform 1.5s;
+    }
+    
+    
+    body {
+        overflow-x: hidden;
+    }
+
     .menu {
         position: absolute;
         top: 89px;
@@ -1373,10 +1502,18 @@ transform: translateX(300%);
         overflow-x: hidden;
     }
 
+    .reggroup {
+        transform: translateX(-1000%);
+    }
+
 
 }
 
 @media (max-width: 768px) {
+    .reggroup {
+        transform: translateX(-1000%);
+    }
+
     .menu {
         position: absolute;
         top: 89px;
@@ -1448,7 +1585,11 @@ transform: translateX(300%);
         display: none;
     }
 
-    #carouselImgId {
+    #carouselImgId1 {
+        display: inline;
+    }
+
+    #carouselImgId2 {
         display: inline;
     }
 

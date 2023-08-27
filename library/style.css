@@ -1293,6 +1293,10 @@ transform: translateX(300%);
     display: none;
 }
 
+.sum-n {
+    display: none;
+}
+
 .catalog1 {
     width: 500px;
     height: 550px;

@@ -1285,16 +1285,41 @@ transform: translateX(300%);
     margin-left: 25px;
 }
 
-.catalog {
-    display: none;                    !!!!!!!!!!!!!!!!!!!!!!
+.w-n.hide {
+    display: none;
+    
+}
+
+.w-n{
+    margin-bottom: 20px;
 }
 
 .s-n {
     display: none;
 }
 
+.s-n.active {
+    display: block;
+    margin-bottom: 60px;
+    
+}
+
 .sum-n {
     display: none;
+}
+
+.sum-n.active {
+    display: block;
+    margin-bottom: 60px;
+}
+
+.a-n {
+    display: none;
+}
+
+.a-n.active {
+    display: block;
+    margin-bottom: 60px;
 }
 
 .catalog1 {
@@ -1777,5 +1802,57 @@ transform: translateY(-30px);
     .hrNav.active .label:nth-of-type(3) {
         top: 50%;
         transform: translate(0%, 0%) rotate(-45deg);
+    }
+
+    .boocks2-2-1str{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boocks2-2-2str{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog1 {
+        margin-bottom: 40px;
+        position: relative;
+        left: -30px;
+    }
+
+    #bookC2-2 {
+        position: relative;
+        left: -30px;
+    }
+
+    #bookC4-2 {
+        position: relative;
+        left: -30px;
+    }
+    
+    .reg.profOpen {
+        transform: translateX(-1860%);
+        transition: transform 1s;
+        z-index: 100000000000000000;
+        position: absolute;
+        top: 0px;
+    }
+
+    .login.logOpen {
+        transform: translateX(-592%);
+        transition: transform 1.5s;
+        z-index: 100000000000000000;
+        position: absolute;
+        top: 0px;
+    }
+
+    .registr.regOpen {
+        transform: translateX(-592%);
+        transition: transform 1.5s;
+        z-index: 100000000000000000;
+        position: absolute;
+        top: -90px;
     }
 }

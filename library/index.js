@@ -188,6 +188,64 @@ predl2.addEventListener("click", function(event) {
 }
 )
 
+const win = document.getElementById('win');
+const spr = document.getElementById('spr');
+const sum = document.getElementById('sum');
+const aut = document.getElementById('aut');
+
+const winnav = document.getElementById('winter-nav');
+const sprnav = document.getElementById('spring-nav');
+const sumnav = document.getElementById('summer-nav');
+const autnav = document.getElementById('autumn-nav');
+
+
+
+win.addEventListener("click", function(event) {
+	if (!win) return console.log('lox');
+	else {
+		winnav.classList.remove('hide');
+		sprnav.classList.remove('active');
+		sumnav.classList.remove('active');
+		autnav.classList.remove('active');
+	}
+}
+)
+
+spr.addEventListener("click", function(event) {
+	if (!spr) return console.log('lox');
+	else {
+		winnav.classList.add('hide');
+		sprnav.classList.add('active');
+		sumnav.classList.remove('active');
+		autnav.classList.remove('active');
+	}
+}
+)
+
+sum.addEventListener("click", function(event) {
+	if (!sum) return console.log('lox');
+	else {
+		winnav.classList.add('hide');
+		sprnav.classList.remove('active');
+		sumnav.classList.add('active');
+		autnav.classList.remove('active');
+	}
+}
+)
+
+aut.addEventListener("click", function(event) {
+	if (!aut) return console.log('lox');
+	else {
+		winnav.classList.add('hide');
+		sprnav.classList.remove('active');
+		sumnav.classList.remove('active');
+		autnav.classList.add('active');
+	}
+}
+)
+
+
+
 // var slideIndex = 1;
 // showSlides(slideIndex);
 

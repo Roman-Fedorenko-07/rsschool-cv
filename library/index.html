@@ -65,17 +65,17 @@
                 </div>
                 <p class="info-zag">E-mail or readers card</p>
                 <form class="eap">
-                    <label class="email-label">
+                    <label class="email-label" id="emlog">
                         <input class="email-label1" type="text" placeholder="">
                     </label>
                 </form>
                     <p class="info-zag infoz1">Password</p>
                     <form class="eap">
-                        <label class="email-label">
+                        <label class="email-label" id="passlog">
                             <input class="email-label1" type="text" placeholder="">
                         </label>
                 </form>
-                <button class="logbut">Log In</button>
+                <button class="logbut" id="logbtn">Log In</button>
                 <div class="predlStr">
                 <p class="predl">Don’t have an account?</p>
                 <p class="predl1" id="predl1">Register</p>
@@ -88,28 +88,28 @@
                     <p class="info-zag1">First name</p>
                     <form class="eap">
                         <label class="email-label">
-                            <input class="email-label1" type="text" placeholder="">
+                            <input class="email-label1" type="text" placeholder="" id="FNinp" pattern="[A-Za-z]{5, 30}" required>
                         </label>
                     </form>
                     <p class="info-zag1">Last name</p>
                     <form class="eap">
                         <label class="email-label">
-                            <input class="email-label1" type="text" placeholder="">
+                            <input class="email-label1" type="text" placeholder="" id="LNinp" pattern="[A-Za-z]{5, 30}" required>
                         </label>
                     </form>
                     <p class="info-zag1">E-mail</p>
                     <form class="eap">
                         <label class="email-label">
-                            <input class="email-label1" type="text" placeholder="">
+                            <input class="email-label1" type="text" placeholder="" id="emailinp" pattern="[A-Za-z0-9.@-_]{5, 30}" required>
                         </label>
                     </form>
                         <p class="info-zag infoz1">Password</p>
                         <form class="eap">
                             <label class="email-label">
-                                <input class="email-label1" type="text" placeholder="">
+                                <input class="email-label1" type="text" placeholder="" id="passinp" pattern="[A-Za-z0-9.-_]{5, 30}" required>
                             </label>
                     </form>
-                    <button class="logbut">Sing Up</button>
+                    <button class="logbut" id="regbtn">Sing Up</button>
                     <div class="predlStr">
                     <p class="predl">Already have an account?</p>
                     <p class="predl1" id="predl2">Login</p>
@@ -154,19 +154,19 @@
             <div class="button">
                 <form>
                     <label>
-                        <input class="carouselImg" id="CI1" onclick="currentSlide(1)" type="radio" name="button">
+                        <input class="carouselImg" id="CI1" type="radio" name="button" checked>
                     </label>
                     <label>
-                        <input class="carouselImg" id="CI2" onclick="currentSlide(2)" type="radio" name="button">
+                        <input class="carouselImg" id="CI2" type="radio" name="button">
                     </label>
                     <label>
-                        <input class="carouselImg" id="CI3" onclick="currentSlide(3)" type="radio" name="button">
+                        <input class="carouselImg" id="CI3" type="radio" name="button">
                     </label>
                     <label>
-                        <input class="carouselImg" id="carouselImgId1" onclick="currentSlide(4)" type="radio" name="button">
+                        <input class="carouselImg" id="carouselImgId1" type="radio" name="button">
                     </label>
                     <label>
-                        <input class="carouselImg" id="carouselImgId2" onclick="currentSlide(5)" type="radio" name="button">
+                        <input class="carouselImg" id="carouselImgId2"  type="radio" name="button">
                     </label>
                 </form>
             </div>
@@ -181,7 +181,7 @@
                 <div class="button2">
                     <form>
                         <label class="forCursor">
-                            <input class="carousel-2" type="radio" name="button2" id="win">
+                            <input class="carousel-2" type="radio" name="button2" id="win" checked>
                             Winter
                         </label>
                         <label class="forCursor">

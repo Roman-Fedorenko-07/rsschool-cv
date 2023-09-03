@@ -50,13 +50,16 @@ const slides3 = document.getElementById("div-imgAbout3-2");
 const dots1 = document.getElementById("CI1");
 const dots2 = document.getElementById("CI2");
 const dots3 = document.getElementById("CI3");
+const dots4 = document.getElementById("carouselImgId1");
+const dots5 = document.getElementById("carouselImgId2");
 ///////////////////////////////////////////
 
 
 dots2.addEventListener("click", function(event) {
 	if (!dots2) return console.log('lox');
 	else {
-	slides2.classList.add('slide1');	
+	slides2.classList.add('slide1');
+	slides3.classList.add('slide1');	
 	img1.classList.add('slide1-img1');
 	img2.classList.add('slide1-img');
 	img3.classList.add('slide1-img');
@@ -65,6 +68,7 @@ dots2.addEventListener("click", function(event) {
 	img3.classList.remove('slide2-img');
 	img2.classList.remove('slide2-img-2');
 	slides3.classList.remove('slide2');
+	slides2.classList.remove('slide-768px-dot4');
 	}
 })
 
@@ -75,11 +79,12 @@ dots3.addEventListener("click", function(event) {
 		img2.classList.remove('slide1-img');
 		img3.classList.remove('slide1-img');
 		
-	slides2.classList.toggle('slide2-img');	
+	slides2.classList.add('slide2-img');	
 	img3.classList.add('slide2-img');
 	img2.classList.add('slide2-img-2');
 	slides3.classList.add('slide2');
 	img1.classList.add('slide1-img1');
+	slides2.classList.remove('slide-768px-dot4');
 	}
 })
 
@@ -95,6 +100,19 @@ dots1.addEventListener("click", function(event) {
 	img2.classList.remove('slide2-img-2');
 	slides3.classList.remove('slide2');
 	img1.classList.remove('slide1-img1');
+
+	slides2.classList.add('slide-768px');
+	slides3.classList.add('slide-768px');
+	slides2.classList.remove('slide-768px-dot4');
+	}
+})
+
+dots4.addEventListener("click", function(event) {
+	if (!dots4) return console.log('lox');
+	else {
+		slides2.classList.add('slide-768px-dot4');
+		img3.classList.remove('slide2-img');
+		img3.classList.add('slide-768px-dot4');
 	}
 })
 
@@ -244,6 +262,57 @@ aut.addEventListener("click", function(event) {
 }
 )
 
+
+
+
+const FN = document.getElementById('FNinp');
+const LN = document.getElementById('LNinp');
+const email = document.getElementById('emailinp');
+const pass = document.getElementById('passinp')
+
+localStorage.setItem('usersArray', JSON.stringify([]));
+localStorage.setItem('loginStatus', false);
+
+let users = JSON.parse(localStorage.getItem('usersArray'))
+
+
+class newUser {
+	constructor(FN, LN, emaill, passs) {
+		this.FN = FN;
+		this.LN = LN; 
+		this.emaill = emaill;
+		this.passs = passs;
+	}
+}
+
+let emailprov = /[A-Za-z0-9.@-_]{5, 30}/g;
+let passprov = /[A-Za-z0-9._-]{5, 30}/g;
+let FNprov = /[A-Za-z]{5, 30}/g;
+let LNprov = /[A-Za-z]{5, 30}/g;
+
+function regNewUser() {
+	if (emailprov.test(email.value) && passprov.test(pass.value) && FNprov.test(FN.value) && LNprov.test(LN.value)) {
+		users.push(new newUser(FN.value, LN.value, email.value, pass.value));
+		localStorage.setItem('usersArray', JSON.stringify(users));
+	}
+}
+
+const regbtn = document.getElementById('regbtn');
+regbtn.onclick = regNewUser;
+
+const emlog = document.getElementById('emlog');
+const passlog = document.getElementById('passlog');
+
+const logbtn = document.getElementById('logbtn');
+logbtn.onclick = function() {
+	if (emailprov.test(emlog.value) && passprov.test(passlog.value)) {
+		for (let i = 0; i < users.length; i++) {
+			if (users[i].emaill === email.value && users[i].passs === pass.value) {
+				localStorage.setItem('loginStatus', true)
+			}
+		}
+	}
+}
 
 
 // var slideIndex = 1;

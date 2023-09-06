@@ -285,10 +285,10 @@ class newUser {
 	}
 }
 
-let emailprov = /[A-Za-z0-9.@-_]{5, 30}/g;
-let passprov = /[A-Za-z0-9._-]{5, 30}/g;
-let FNprov = /[A-Za-z]{5, 30}/g;
-let LNprov = /[A-Za-z]{5, 30}/g;
+let emailprov = /[A-Za-z0-9.@-_]{2, 30}/g;
+let passprov = /[A-Za-z0-9._-]{3, 30}/g;
+let FNprov = /[A-Za-z]{2, 30}/g;
+let LNprov = /[A-Za-z]{2, 30}/g;
 
 function regNewUser() {
 	if (emailprov.test(email.value) && passprov.test(pass.value) && FNprov.test(FN.value) && LNprov.test(LN.value)) {

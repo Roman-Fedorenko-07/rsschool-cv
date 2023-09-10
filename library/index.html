@@ -26,7 +26,13 @@
                     </ul>
                 </nav>
             <div class="proficon" id="PI"><img class="profic" id="pi" src="../things-for-library/icon_profile.svg" alt="profile icon"></div>
+            <div class="profdiv">
+                <p id="nameLatter"><script>
+                `${FN.value[0]}${LN.value[0]}`;
+                </script></p>
+            </div>
             <div class="hrNav">
+                
                         <label class="label"><span class="hrNav-design"></span></label>
                         <label class="label"><span class="hrNav-design"></span></label>
                         <label class="label"><span class="hrNav-design"></span></label>
@@ -88,25 +94,25 @@
                     <p class="info-zag1">First name</p>
                     <form class="eap">
                         <label class="email-label">
-                            <input class="email-label1" type="text" placeholder="" id="FNinp" pattern="[A-Za-z]{5, 30}" required>
+                            <input class="email-label1" type="text" placeholder="" id="FNinp" pattern="[A-Za-z]" required>
                         </label>
                     </form>
                     <p class="info-zag1">Last name</p>
                     <form class="eap">
                         <label class="email-label">
-                            <input class="email-label1" type="text" placeholder="" id="LNinp" pattern="[A-Za-z]{5, 30}" required>
+                            <input class="email-label1" type="text" placeholder="" id="LNinp" pattern="[A-Za-z]" required>
                         </label>
                     </form>
                     <p class="info-zag1">E-mail</p>
                     <form class="eap">
                         <label class="email-label">
-                            <input class="email-label1" type="text" placeholder="" id="emailinp" pattern="[A-Za-z0-9.@-_]{5, 30}" required>
+                            <input class="email-label1" type="text" placeholder="" id="emailinp" pattern="[A-Za-z0-9.@-_]" required>
                         </label>
                     </form>
                         <p class="info-zag infoz1">Password</p>
                         <form class="eap">
                             <label class="email-label">
-                                <input class="email-label1" type="text" placeholder="" id="passinp" pattern="[A-Za-z0-9.-_]{5, 30}" required>
+                                <input class="email-label1" type="text" placeholder="" id="passinp" pattern="[A-Za-z0-9.@-_]" required>
                             </label>
                     </form>
                     <button class="logbut" id="regbtn">Sing Up</button>

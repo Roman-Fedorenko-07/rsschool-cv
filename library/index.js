@@ -277,18 +277,18 @@ let users = JSON.parse(localStorage.getItem('usersArray'))
 
 
 class newUser {
-	constructor(FN, LN, emaill, passs) {
+	constructor(FN, LN, email, pass) {
 		this.FN = FN;
 		this.LN = LN; 
-		this.emaill = emaill;
-		this.passs = passs;
+		this.email = email;
+		this.pass = pass;
 	}
 }
 
-let emailprov = /[A-Za-z0-9.@-_]{5, 30}/g;
-let passprov = /[A-Za-z0-9._-]{5, 30}/g;
-let FNprov = /[A-Za-z]{5, 30}/g;
-let LNprov = /[A-Za-z]{5, 30}/g;
+let emailprov = /[^[{]*[A-Za-z0-9.@-_]/g;
+let passprov = /[^[{]*[A-Za-z0-9_-]/g;
+let FNprov = /[^[{]*[A-Za-z]/g;
+let LNprov = /[^[{]*[A-Za-z]/g;
 
 function regNewUser() {
 	if (emailprov.test(email.value) && passprov.test(pass.value) && FNprov.test(FN.value) && LNprov.test(LN.value)) {
@@ -304,15 +304,25 @@ const emlog = document.getElementById('emlog');
 const passlog = document.getElementById('passlog');
 
 const logbtn = document.getElementById('logbtn');
-logbtn.onclick = function() {
-	if (emailprov.test(emlog.value) && passprov.test(passlog.value)) {
+logbtn.addEventListener('click', function(event) {
+	{
 		for (let i = 0; i < users.length; i++) {
-			if (users[i].emaill === email.value && users[i].passs === pass.value) {
-				localStorage.setItem('loginStatus', true)
+			if (users[i].email === email.value && users[i].pass === pass.value) {
+				localStorage.setItem('loginStatus', true);
+				
 			}
 		}
 	}
 }
+)
+
+const FNL = JSON.parse(localStorage.getItem('usersArray.FN'));
+console.log(FNL)
+//const LNL = JSON.parse(localStorage.getItem('usersArray'));
+
+// if (loginStatus === true) {
+
+// }
 
 
 // var slideIndex = 1;

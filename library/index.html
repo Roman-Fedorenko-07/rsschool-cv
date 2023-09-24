@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../things-for-library/favicon_io1/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../things-for-library/favicon_io1/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../things-for-library/favicon_io1/favicon-16x16.png">
+</head>
+<body>
+    <header>
+        <section class="header-flex">
+            <div class="header-txt">
+                <h1 class="bPL">Brooklyn Public Library</h1>
+            </div>
+            <div class="div-header">
+                <nav class="menu">
+                    <ul class="navig">
+                        <li class="menuItem"><a href="#about">About</a></li>
+                        <li class="menuItem"><a href="#favorites">Favorites</a></li>
+                        <li class="menuItem"><a href="#coffeShop">Coffe shop</a></li>
+                        <li class="menuItem"><a href="#contacts">Contacts</a></li>
+                        <li class="menuItem"><a href="#library-Card">Library Card</a></li>
+                    </ul>
+                </nav>
+            <div class="proficon" id="PI"><img class="profic" id="pi" src="../things-for-library/icon_profile.svg" alt="profile icon"></div>
+            <div class="profdiv">
+                <p id="nameLatter"><script>
+                `${FN.value[0]}${LN.value[0]}`;
+                </script></p>
+            </div>
+            <div class="hrNav">
+                
+                        <label class="label"><span class="hrNav-design"></span></label>
+                        <label class="label"><span class="hrNav-design"></span></label>
+                        <label class="label"><span class="hrNav-design"></span></label>
+                        </div>
+            </div>
+            
+        </section>
+    </header>
+    <main>
+        <section class="allWelcome">
+            <img class="fonWelcome"
+                src="../things-for-library/Welcome-picture.jpg"
+                alt="background">
+            <div class="welcome">
+                <h3 class="pWelcome">WELCOME<br>
+                    TO THE BROOKLYN<br>
+                    LIBRARY</h3>
+            </div>
+            <div class="reggroup">              
+                <div class="reg" id="reg">
+                <p class="pzhr">Profile</p>
+                <hr class="hrlog">
+                <p class="plog" id="plog">Log in</p>
+                <p class="plog2" id="plog2">Register</p>
+            </div>
+            <div class="autreg">
+                <p class="pzhr">Profile</p>
+                <hr class="hrlog">
+                <p class="plog_">My profile</p>
+                <p class="plog2">Log Out</p>
+            </div>
+            <div class="login" id="login">
+                <div class="loginStr">
+                <p class="zag">LOGIN</p>
+                <img class="closebtn" id="closebtn1" src="../things-for-library/close_btn.svg" alt="close button">
+                </div>
+                <p class="info-zag">E-mail or readers card</p>
+                <form class="eap">
+                    <label class="email-label" id="emlog">
+                        <input class="email-label1" type="text" placeholder="">
+                    </label>
+                </form>
+                    <p class="info-zag infoz1">Password</p>
+                    <form class="eap">
+                        <label class="email-label" id="passlog">
+                            <input class="email-label1" type="text" placeholder="">
+                        </label>
+                </form>
+                <button class="logbut" id="logbtn">Log In</button>
+                <div class="predlStr">
+                <p class="predl">Don’t have an account?</p>
+                <p class="predl1" id="predl1">Register</p>
+                </div>
+                <div class="registr" id="registr">
+                    <div class="reg-Str">
+                    <p class="zag1">REGISTER</p>
+                    <img class="closebtn" id="closebtn2" src="../things-for-library/close_btn.svg" alt="close button">
+                    </div>
+                    <p class="info-zag1">First name</p>
+                    <form class="eap">
+                        <label class="email-label">
+                            <input class="email-label1" type="text" placeholder="" id="FNinp" pattern="[A-Za-z]" required>
+                        </label>
+                    </form>
+                    <p class="info-zag1">Last name</p>
+                    <form class="eap">
+                        <label class="email-label">
+                            <input class="email-label1" type="text" placeholder="" id="LNinp" pattern="[A-Za-z]" required>
+                        </label>
+                    </form>
+                    <p class="info-zag1">E-mail</p>
+                    <form class="eap">
+                        <label class="email-label">
+                            <input class="email-label1" type="text" placeholder="" id="emailinp" pattern="[A-Za-z0-9.@-_]" required>
+                        </label>
+                    </form>
+                        <p class="info-zag infoz1">Password</p>
+                        <form class="eap">
+                            <label class="email-label">
+                                <input class="email-label1" type="text" placeholder="" id="passinp" pattern="[A-Za-z0-9.@-_]" required>
+                            </label>
+                    </form>
+                    <button class="logbut" id="regbtn">Sing Up</button>
+                    <div class="predlStr">
+                    <p class="predl">Already have an account?</p>
+                    <p class="predl1" id="predl2">Login</p>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <section class="sAbout" id="about">
+            <div class="about">
+                <h2 class="pAbout">About</h2>
+                <hr class="hrAbout">
+            </div>
+            <div class="divNextAbout">
+                <p class="textNextAbout">The Brooklyn Library is a free workspace, a large number of books and a cozy
+                    coffee shop inside</p>
+            </div>
+            <div class="aboutPicture">
+                <div><img src="../things-for-library/Carret_Left.svg" class="carret-l"></div>
+                <img class="imgAbout" id="flangImg1"
+                    src="../things-for-library/img1about.jpg"
+                    alt="fist picture from library">
+                <img class="imgAbout" id="CentrImg"
+                    src="../things-for-library/img2about.jpg"
+                    alt="second picture from library">
+                <img class="imgAbout" id="flangImg2"
+                    src="../things-for-library/img3about.jpg"
+                    alt="third picture from library">
+                    <div><img src="../things-for-library/Carret_Right.svg" class="carret-r"></div>
+
+                    <div class="div-imgAbout2" id="div-imgAbout2-2">
+                        <img class="imgAbout" id="flangImg2-2"
+                        src="../things-for-library/fourimgabout.jfif"
+                        alt="four picture from library">
+                    </div>
+                    <div class="div-imgAbout3" id="div-imgAbout3-2">
+                        <img class="imgAbout" id="flangImg3-2"
+                        src="../things-for-library/fiveimgabout.jfif"
+                        alt="third picture from library">
+                    </div>
+
+            </div>
+            <div class="button">
+                <form>
+                    <label>
+                        <input class="carouselImg" id="CI1" type="radio" name="button" checked>
+                    </label>
+                    <label>
+                        <input class="carouselImg" id="CI2" type="radio" name="button">
+                    </label>
+                    <label>
+                        <input class="carouselImg" id="CI3" type="radio" name="button">
+                    </label>
+                    <label>
+                        <input class="carouselImg" id="carouselImgId1" type="radio" name="button">
+                    </label>
+                    <label>
+                        <input class="carouselImg" id="carouselImgId2"  type="radio" name="button">
+                    </label>
+                </form>
+            </div>
+        </section>
+        <section class="sFavorites" id="favorites">
+            <div class="divFavorites">
+                <h2 class="favTxt">Favorites</h2>
+                <hr class="hrFavorites">
+            </div>
+            <div class="txtNextFavorites">
+                <p class="pFav">Pick favorites of season</p>
+                <div class="button2">
+                    <form>
+                        <label class="forCursor">
+                            <input class="carousel-2" type="radio" name="button2" id="win" checked>
+                            Winter
+                        </label>
+                        <label class="forCursor">
+                            <input class="carousel2" type="radio" name="button2" id="spr">
+                            Spring
+                        </label>
+                        <label class="forCursor">
+                            <input class="carousel2" type="radio" name="button2" id="sum">
+                            Summer
+                        </label>
+                        <label class="forCursor">
+                            <input class="carousel2" type="radio" name="button2" id="aut">
+                            Autumn
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="w-n" id="winter-nav">
+            <div class="boocks2-1str">
+                <div class="catalog">
+                    <p class="staffPicks">Staff Picks</p>
+                    <hr class="hr-ST">
+                    <p class="author">THE BOOK EATERS<br>By Sunyi Dean</p>
+                    <p class="description">An unusual sci-fi story about a book<br>eater woman who tries desperately
+                        to<br>save her dangerous mind-eater son<br>from tradition and certain death.<br>Complete with
+                        dysfunctional family<br>values, light Sapphic romance, and a<br>strong, complex protagonist. Not
+                        for<br>the faint of heart.</p>
+                    <button class="buy">Buy</button>
+                    <img class="img-book1"
+                        src="../things-for-library/favImg1.jpg"
+                        alt="cover of book">
+                </div>
+                <div class="catalog" id="bookC2">
+                    <p class="staffPicks">Staff Picks</p>
+                    <hr class="hr-ST">
+                    <p class="author">CACKLE<br>By Rachel Harrison</p>
+                    <p class="description-2">Are your Halloween movies of choice The Witches of Eastwick and Practical
+                        Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint
+                        town in upstate New York and befriends a beautiful witch.</p>
+                    <button class="buy">Buy</button>
+                    <img class="img-book2"
+                        src="../things-for-library/favImg2.jpg"
+                        alt="cover of book">
+                </div>
+            </div>
+            <div class="boocks2-2str">
+                <div class="catalog">
+                    <p class="staffPicks">Staff Picks</p>
+                    <hr class="hr-ST">
+                    <p class="author">DANTE: POET OF THE SECULAR WORLD<br>By Erich Auerbach</p>
+                    <p class="description">Auerbach's engaging book places the 'Comedy' within the tradition of epic,
+                        tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the
+                        individual and his drama of soul into something of divine significance—an inspired introduction
+                        to Dante's main themes.</p>
+                    <button class="buy">Buy</button>
+                    <img class="img-book3"
+                        src="../things-for-library/favImg3.jpg"
+                        alt="cover of book">
+                </div>
+                <div class="catalog" id="bookC4">
+                    <p class="staffPicks">Staff Picks</p>
+                    <hr class="hr-ST">
+                    <p class="author-3">THE LAST QUEEN<br>By Clive Irving</p>
+                    <p class="description-4">A timely and revelatory new biography of Queen Elizabeth (and her family)
+                        exploring how the Windsors have evolved and thrived as the modern world has changed around them.
+                    </p>
+                    <button class="buy-4" disabled>Own</button>
+                    <img class="img-book4"
+                        src="../things-for-library/favImg4.jpg"
+                        alt="cover of book">
+                </div>
+            </div>
+            </div>
+
+
+
+
+
+
+                <div class="s-n" id="spring-nav">
+                <div class="boocks2-2-1str">
+                    <div class="catalog1">
+                        <p class="staffPicks">Staff Picks</p>
+                        <hr class="hr-ST">
+                        <p class="author-2">THE BODY<br>By Stephen King</p>
+                        <p class="description">Powerful novel that takes you back to a nostalgic time, exploring both the beauty and danger and loss of innocence that is youth.</p>
+                        <button class="buy">Buy</button>
+                        <img class="img-book1-2"
+                            src="../things-for-library/springbook1.jfif"
+                            alt="cover of book">
+                    </div>
+                    <div class="catalog1" id="bookC2-2">
+                        <p class="staffPicks">Staff Picks</p>
+                        <hr class="hr-ST">
+                        <p class="author-2">Carry: A Memoir of Survival on Stolen Land<br>By Toni Jenson</p>
+                        <p class="description-2">This memoir about the author's relationship with gun violence feels both expansive and intimate, resulting in a lyrical indictment of the way things are.</p>
+                        <button class="buy">Buy</button>
+                        <img class="img-book2-2"
+                            src="../things-for-library/springbook2.jfif"
+                            alt="cover of book">
+                    </div>
+                </div>
+                <div class="boocks2-2-2str">
+                    <div class="catalog1">
+                        <p class="staffPicks">Staff Picks</p>
+                        <hr class="hr-ST">
+                        <p class="author-2">Days of Distraction<br>By Alexandra Chang</p>
+                        <p class="description">A sardonic view of Silicon Valley culture, a meditation on race, and a journal of displacement and belonging, all in one form-defying package of spare prose.</p>
+                        <button class="buy">Buy</button>
+                        <img class="img-book3-2"
+                            src="../things-for-library/springbook3.jfif"
+                            alt="cover of book">
+                    </div>
+                    <div class="catalog1" id="bookC4-2">
+                        <p class="staffPicks">Staff Picks</p>
+                        <hr class="hr-ST">
+                        <p class="author-2">Dominicana<br>By Angie Cruz</p>
+                        <p class="description-4">A fascinating story of a teenage girl who marries a man twice her age with the promise to bring her to America. Her marriage is an opportunity for her family to eventually immigrate. For fans of Isabel Allende and Julia Alvarez.
+                        </p>
+                        <button class="buy-4" disabled>Own</button>
+                        <img class="img-book4-2"
+                            src="../things-for-library/springbook4.jfif"
+                            alt="cover of book">
+                    </div>
+                </div>
+                </div>
+
+
+
+
+
+
+                <div class="sum-n" id="summer-nav">
+                    <div class="boocks2-2-1str">
+                        <div class="catalog1">
+                            <p class="staffPicks">Staff Picks</p>
+                            <hr class="hr-ST">
+                            <p class="author-2">Crude: A Memoir<br>By Pablo Fajardo & ​​Sophie Tardy-Joubert</p>
+                            <p class="description">Drawing and color by Damien Roudeau | This book illustrates the struggles of a group of indigenous Ecuadoreans as they try to sue the ChevronTexaco company for damage their oil fields did to the Amazon and her people</p>
+                            <button class="buy">Buy</button>
+                            <img class="img-book1-2"
+                                src="../things-for-library/sumbook1.jfif"
+                                alt="cover of book">
+                        </div>
+                        <div class="catalog1" id="bookC2-2">
+                            <p class="staffPicks">Staff Picks</p>
+                            <hr class="hr-ST">
+                            <p class="author-2">Let My People Go Surfing<br>By Yvon Chouinard</p>
+                            <p class="description-2">Chouinard—climber, businessman, environmentalist—shares tales of courage and persistence from his experience of founding and leading Patagonia, Inc. Full title: Let My People Go Surfing: The Education of a Reluctant Businessman, Including 10 More Years of Business Unusual.</p>
+                            <button class="buy">Buy</button>
+                            <img class="img-book2-2"
+                                src="../things-for-library/summerbook2.jfif"
+                                alt="cover of book">
+                        </div>
+                    </div>
+                    <div class="boocks2-2-2str">
+                        <div class="catalog1">
+                            <p class="staffPicks">Staff Picks</p>
+                            <hr class="hr-ST">
+                            <p class="author-2">The Octopus Museum: Poems<br>By Brenda Shaughnessy</p>
+                            <p class="description">This collection of bold and scathingly beautiful feminist poems imagines what comes after our current age of environmental destruction, racism, sexism, and divisive politics.</p>
+                            <button class="buy">Buy</button>
+                            <img class="img-book3-2"
+                                src="../things-for-library/sumbook3.jfif"
+                                alt="cover of book">
+                        </div>
+                        <div class="catalog1" id="bookC4-2">
+                            <p class="staffPicks">Staff Picks</p>
+                            <hr class="hr-ST">
+                            <p class="author-2">Shark Dialogues: A Novel<br>By Kiana Davenport</p>
+                            <p class="description-4">An epic saga of seven generations of one family encompasses the tumultuous history of Hawaii as a Hawaiian woman gathers her four granddaughters together in an erotic tale of villains and dreamers, queens and revolutionaries, lepers and healers.
+                            </p>
+                            <button class="buy-4" disabled>Own</button>
+                            <img class="img-book4-2"
+                                src="../things-for-library/sumbook4.jfif"
+                                alt="cover of book">
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+
+
+                    <div class="a-n" id="autumn-nav">
+                        <div class="boocks2-2-1str">
+                            <div class="catalog1">
+                                <p class="staffPicks">Staff Picks</p>
+                                <hr class="hr-ST">
+                                <p class="author-2">Casual Conversation<br>By Renia White</p>
+                                <p class="description">White's impressive debut collection takes readers through and beyond the concepts of conversation and the casual - both what we say to each other and what we don't, examining the possibilities around how we construct and communicate identity. </p>
+                                <button class="buy">Buy</button>
+                                <img class="img-book1-2"
+                                    src="../things-for-library/abook1.jfif"
+                                    alt="cover of book">
+                            </div>
+                            <div class="catalog1" id="bookC2-2">
+                                <p class="staffPicks">Staff Picks</p>
+                                <hr class="hr-ST">
+                                <p class="author-2">The Great Fire<br>By Lou Ureneck</p>
+                                <p class="description-2">The harrowing story of an ordinary American and a principled Naval officer who, horrified by the burning of Smyrna, led an extraordinary rescue effort that saved a quarter of a million refugees from the Armenian Genocide</p>
+                                <button class="buy">Buy</button>
+                                <img class="img-book2-2"
+                                    src="../things-for-library/abook2.jfif"
+                                    alt="cover of book">
+                            </div>
+                        </div>
+                        <div class="boocks2-2-2str">
+                            <div class="catalog1">
+                                <p class="staffPicks">Staff Picks</p>
+                                <hr class="hr-ST">
+                                <p class="author-2">Rickey: The Life and Legend<br>By Howard Bryant</p>
+                                <p class="description">With the fall rolling around, one can't help but think of baseball's postseason coming up! And what better way to prepare for it than reading the biography of one of the game's all-time greatest performers, the Man of Steal, Rickey Henderson?</p>
+                                <button class="buy">Buy</button>
+                                <img class="img-book3-2"
+                                    src="../things-for-library/abook3.jfif"
+                                    alt="cover of book">
+                            </div>
+                            <div class="catalog1" id="bookC4-2">
+                                <p class="staffPicks">Staff Picks</p>
+                                <hr class="hr-ST">
+                                <p class="author-2">Slug: And Other Stories<br>By Megan Milks</p>
+                                <p class="description-4">Exes Tegan and Sara find themselves chained together by hairballs of codependency. A father and child experience the shared trauma of giving birth to gods from their wounds.</p>
+                                <button class="buy-4" disabled>Own</button>
+                                <img class="img-book4-2"
+                                    src="../things-for-library/abook4.jfif"
+                                    alt="cover of book">
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                
+            </div>
+        </section>
+        <section class="CS" id="coffeShop">
+            <div class="headCS">
+                <h2 class="h2CS">Coffee Shop</h2>
+                <hr class="hrCS">
+                <p class="pCS">In our library, we have of cozy coffee shop, welcoming in customers with frothy
+                    cappuccinos and friendly conversation.
+                    You can get a favorite book and read in coffee shop. our barista to cook you best coffee, and also
+                    you can try desserts
+                    from bakery.</p>
+            </div>
+            <div class="menu-Eat">
+                <div class="drink">
+                    <p class="coffe-Tea">Coffee & Tea</p>
+                    <div class="menuBlock">
+                        <p class="dish">Cold Brew Coffee</p>
+                        <hr class="hrDish">
+                        <p class="prise">$3</p>
+                    </div>
+                    <div class="menuBlock">
+                        <p class="dish">French Press Pot</p>
+                        <hr class="hrDish">
+                        <p class="prise">$5</p>
+                    </div>
+                    <div class="menuBlock">
+                        <p class="dish">Espresso</p>
+                        <hr class="hrDish">
+                        <p class="prise">$2</p>
+                    </div>
+                    <div class="menuBlock">
+                        <p class="dish">Cappuccino</p>
+                        <hr class="hrDish">
+                        <p class="prise">$4</p>
+                    </div>
+                    <div class="menuBlock">
+                        <p class="dish">Hot tea</p>
+                        <hr class="hrDish">
+                        <p class="prise">$2</p>
+                    </div>
+                    <div class="menuBlock">
+                        <p class="dish">Cold tea</p>
+                        <hr class="hrDish">
+                        <p class="prise">$2</p>
+                    </div>
+                </div>
+                <div class="food">
+                    <p class="coffe-Tea">Desserts & Cakes </p>
+                    <div class="menuBlock">
+                        <p class="dish">Forest Gateau</p>
+                        <hr class="hrDish">
+                        <p class="prise">$16</p>
+                    </div>
+                    <div class="menuBlock">
+                        <p class="dish">Blue Moon</p>
+                        <hr class="hrDish">
+                        <p class="prise">$16</p>
+                    </div>
+                    <div class="menuBlock">
+                        <p class="dish">Truffle Cake</p>
+                        <hr class="hrDish">
+                        <p class="prise">$15</p>
+                    </div>
+                    <div class="menuBlock">
+                        <p class="dish">Chocolate Cake</p>
+                        <hr class="hrDish">
+                        <p class="prise">$18</p>
+                    </div>
+                    <div class="menuBlock">
+                        <p class="dish">Poet’s Dream Cake</p>
+                        <hr class="hrDish">
+                        <p class="prise">$16</p>
+                    </div>
+                    <div class="menuBlock">
+                        <p class="dish">Pineapple Cake</p>
+                        <hr class="hrDish">
+                        <p class="prise">$14</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="headCon">
+                <h2 class="Contxt">Our Contacts</h2>
+                <hr class="hrCon">
+            </div>
+            <div class="class-Info">
+                <div class="class-InfoTxt">
+                    <p class="pCIT">For all Library inquiries:</p>
+                    <div class="infoLine">
+                    <p class="CIT">Please call</p>
+                    <a class="linkInfo" href="tel:(617)730-2370">(617) 730-2370</a>
+                    </div>
+                    <div class="infoLine">
+                    <p class="CIT">For TTY service, please call</p>
+                    <a class="linkInfo" href="tel:(617)730-2370">(617) 730-2370</a>
+                    </div>
+                    <div class="infoLine">
+                    <p class="CIT">Putterham Library:</p>
+                    <a class="linkInfo" href="tel:(617)730-2385">(617) 730-2385</a>
+                    </div>
+                    <p class="pCIT" id="seniorStaff">Senior Staff</p>
+                    <div class="CIT-Inline">
+                        <p class="CIT-Last">Library Director:</p>
+                        <a class="pCIT-Last" href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a>
+                    </div>
+                </div>
+                <div class="class-InfoImg">
+                    <img class="map" alt="map's"
+                    src="../things-for-library/maps.png">
+                </div>
+            </div>
+        </section>
+        <section class="library-Card" id="library-Card">
+            <div class="headCard">
+                <h2 class="h2Card">Digital Library Cards</h2>
+                <hr class="hrCard">
+            </div>
+            <div class="LC"> 
+            <div class="findCard">
+                <p class="findCardTxt">Find your Library card</p>
+                <div class="underFindCard">
+                <div class="findCard-Card">
+                    <p class="findCard-CardTxt">Brooklyn Public Library</p>
+                    <form class="formCard">
+                        <label class="label-Card">
+                            <input class="inp-card" type="text" placeholder="Reader's name">
+                        </label>
+                    </form>
+                    <form class="formCard">
+                        <label class="label-Card">
+                            <input class="inp-card" type="text" placeholder="Card number">
+                        </label>
+                    </form>
+                </div>
+                    <button class="CTC">Check the card</button>
+                </div>
+            </div>
+            <div class="GARC">
+                <p class="p1GARC">Get a reader card</p>
+                <p class="p2GARC">You will be able to see a reader card after<br>logging into account or you can register a new account</p>
+                <div class="but-GARC">
+                    <button class="butGARC">Sign Up</button>
+                    <button class="butGARC" id="but2GARC">Log in</button>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer1Str">
+            <div>
+                <a href="https://www.google.com/maps/place/286+Cadman+Plaza+W,+Brooklyn,+NY+11201,+USA/@40.6956458,-73.9912976,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a49b649b8c3:0x6342a2291cea2e!8m2!3d40.6956458!4d-73.9912976!16s%2Fg%2F11s2lgz8ns?entry=ttu">
+                    286 Cadman Plaza, New York,<br>NY 11238, United States</a>
+            </div>
+            <div class="endStr1">
+                <p>Mon - Fri<br>
+                08:00 am - 07:00 pm</p>
+            </div>
+        </div>
+        <div class="lastSect">
+            <div class="footer2Str">
+                <div class="sMedia">
+                    <ul class="ul-Media">
+                    <li><a href="https://twitter.com/pupochak"><img src="../things-for-library/u_twitter-alt.svg" alt="twitter-icon" class="mediaIcon"></a></li>
+                    <li><a href="https://www.instagram.com/roman___fedorenko/"><img src="../things-for-library/u_instagram.svg" alt="instagram-icon" class="mediaIcon"></a></li>
+                    <li><a href="https://www.facebook.com/roman.engleshman"><img src="../things-for-library/u_facebook-f.svg" alt="facebook-icon" class="mediaIcon"></a></li>
+                    </ul>
+                </div>
+                <div class="p2Str">
+                <p>Sat - Sun<br>10:00 am - 06:00 pm</p>
+                </div>
+            </div>
+            <hr class="fHr">
+            <div class="lastFooter">
+                <p class="pLastFooter1">2023</p>
+                <a href="https://rs.school/js-stage0/" class="pLastFooter2">The Rolling Scopes School</a>
+                <a href="https://github.com/Roman-Fedorenko-07" class="pLastFooter3">Roman-Fedorenko-07</a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script> 
+</body>
+</html>
